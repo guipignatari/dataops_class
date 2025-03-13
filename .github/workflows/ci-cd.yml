@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v3
       - name: Configurar cache do Poetry
         uses: actions/cache@v3
         with:
